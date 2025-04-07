@@ -1,0 +1,148 @@
+﻿.body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
+    background-color: lightgreen;
+    color: white;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding: 10px 0;
+    position: relative;
+    flex-wrap: wrap;
+    font-family: Arial, sans-serif;
+}
+
+.navbar a {
+    font-family: Arial, sans-serif;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: black;
+    border: none;
+    transition: background 0.3s;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-right: 1px solid white;
+    }
+
+.navbar a:hover {
+    background-color: lightgray;
+
+}
+
+.navbar a.active {
+    background-color: #004d00;
+
+}
+
+.navbar a:last-child {
+    border-right: none;
+
+}
+
+.bio-container {
+    font-family: Arial, sans-serif;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.bio-section, .hobbies-section, .modules-section {
+    font-family: Arial, sans-serif;
+    border: 2px solid #006400;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 0;
+}
+
+.bio-section h2, .hobbies-section h2, .modules-section h2 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: black;
+    }
+
+.bio-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.bio-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 0;
+    transition: transform 1s ease-in-out;
+    max-width: 50%;
+    margin-right: 20px;
+}
+
+.bio-img:hover {
+    transform: scaleX(-1);
+
+}
+
+.hobbies-img {
+    width: 150px;
+    height: 150px;
+    margin-left: 700px;
+    transition: transform 1s ease-in-out;
+    max-width: 100%;
+}
+
+.hobbies-img:hover {
+    transform: scaleX(-1);
+
+}
+
+.hobbies-text p {
+    font-size: 16px;
+    margin: 10px 0;
+    margin-left: 200px;
+}
+
+.bio-text p {
+    font-size: 16px;
+    margin: 10px 0;
+    margin-left: 45px;
+    flex: 1;
+}
+
+
+.modules-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.module-column {
+    width: 45%;
+}
+.panel {
+    border: 2px solid green;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.panel-heading {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
