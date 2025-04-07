@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="../Content/Styles.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- NavBar Section -->
+    <div class="name">Lemmetjie Groenewalt</div>
+    <div class="navbar">
+        <a href="/">Main</a>
+        <a href="../MyStudyGroup/MyStudyGroupView">List Of People</a>
+        <a href="JohnDoeHTML.html">John Doe</a>
+        <a href="JaneDoeHTML.html">Jane Doe</a>
+        <a href="JoanPieterseHTML.html">Joan Pieterse</a>
+        <a href="LemmetjieGroenewaltHTML.html" class="active">Lemmetjie Groenewalt</a>
+        <a href="LewaldoRossHTML.html">Lewaldo Ross</a>
+        <a <button onclick="goBack()">Back</button></a>
+    </div>
+
+    <div class="bio-container">
+        <!-- Biography Section -->
+        <div class="bio-section">
+            <h2>Biography</h2>
+            <div class="bio-content">
+                <img src="../images/black-widow-1.jpg" alt="Person" class="bio-img">
+                <div class="bio-text">
+                    <p><strong>Location:</strong> Bloemfontein, South Africa</p>
+                    <p><strong>Degree:</strong> Bachelor of Science in Psychology</p>
+                    <p><strong>Reason for Studying Here:</strong> I’ve always been fascinated by how the human mind works, and I knew I wanted to help people. That’s why I’m studying a Bachelor of Science in Psychology. The University of Pretoria has given me the perfect platform to understand human behavior and mental health better. I’m excited to use my knowledge to support individuals in overcoming personal challenges and improve mental well-being.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hobbies Section -->
+        <div class="hobbies-section">
+            <h2>Hobbies</h2>
+            <div class="hobbies-content">
+                <div class="hobbies-text">
+                    <p><strong>Hobbies:</strong> Playing chess, reading mystery novels, volunteering at animal shelters</p>
+                    <p><strong>Favorite Activity:</strong> Organizing chess tournaments with friends and challenging himself with new strategies.</p>
+                </div>
+                <img src="../images/Don-cheadle-as-rhodey-Cropped.jpg" alt="Hobbies" class="hobbies-img">
+            </div>
+        </div>
+
+        <!-- Modules Section -->
+        <div class="modules-section">
+            <h2>Modules</h2>
+            <div class="modules-content">
+                <div class="module-column">
+                    <ul>
+                        <strong> SEMESTER 1:</strong>
+                        <li>EKN 110</li>
+                        <li>OBS 124</li>
+                        <li>WST 212</li>
+                    </ul>
+                </div>
+                <div class="module-column">
+                    <ul>
+                        <strong> SEMESTER 2:</strong>
+                        <li>BEM 200</li>
+                        <li>STC 122</li>
+                        <li>BER 210</li>
+                        <li>BAC 300</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Go back to the previous page
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+
+</body>
+</html>

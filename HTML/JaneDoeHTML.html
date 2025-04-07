@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Content/Styles.css" rel="stylesheet" />
+    <style>
+        /* panel styling, do it inside the document for override purposes */
+        .panel {
+            border: 2px solid green;
+            padding: 15px;
+            background-color: white;
+        }
+
+        .panel-heading {
+            background-color: #f8f9fa;
+            font-weight: bold;
+        }
+
+        .col-12 {
+            margin-bottom: 20px; /* makes it so that there is a gap belo each panel */
+        }
+    </style>
+</head>
+<body>
+    <!-- NavBar Section -->
+    <div class="name">Jane Doe</div>
+    <div class="navbar">
+        <a href="/">Main</a>
+        <a href="../MyStudyGroup/MyStudyGroupView">List Of People</a>
+        <a href="JohnDoeHTML.html">John Doe</a>
+        <a href="JaneDoeHTML.html" class="active">Jane Doe</a>
+        <a href="JoanPieterseHTML.html">Joan Pieterse</a>
+        <a href="LemmetjieGroenewaltHTML.html">Lemmetjie Groenewalt</a>
+        <a href="LewaldoRossHTML.html">Lewaldo Ross</a>
+        <a href="javascript:history.back()" class="btn btn-secondary">Back</a>
+    </div>
+
+    <div class="container my-4">
+        <div class="row">
+            <!-- Biography Panel -->
+            <div class="col-12">
+                <div class="panel h-100 d-flex flex-column">
+                    <div class="panel-heading">
+                        <h2>Biography</h2>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <!-- use inline css to override other css and only change current html page image -->
+                                <img src="../images/steve-rogers.jpg" alt="Person" class="bio-img img-fluid" style="width: 150px; height: 150px; object-fit: cover;">
+                            </div>
+                            <div class="col-md-8">
+                                <p>I’m from Pretoria, South Africa. I’m studying Architecture at the University of Pretoria because I’ve always had a passion for design and creativity. I find joy in designing spaces that not only look beautiful but also serve a functional purpose. Architecture allows me to combine art and science, to create buildings that are both aesthetically pleasing and sustainable. I aim to design innovative buildings that improve the lives of people while also contributing to the development of cities and towns. I hope to work on projects that enhance the way people interact with their environment and help shape the future of urban spaces.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hobbies Panel -->
+            <div class="col-12">
+                <div class="panel h-100 d-flex flex-column">
+                    <div class="panel-heading">
+                        <h2>Hobbies</h2>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <p>I enjoy a variety of hobbies that complement my love for design and creativity. One of my biggest hobbies is sketching, especially cityscapes. I love exploring new places and capturing architectural landmarks through my sketches, which inspires my work as an architect. Traveling is another one of my passions, as it allows me to experience new cultures and gain insights into different architectural styles from around the world. I also have a keen interest in interior design, as it enables me to experiment with space planning and design elements within buildings. These activities fuel my creativity and enhance my ability to think critically about design challenges.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <!-- use inline css to make hobby image same size as bio image -->
+                                <img src="../images/The-Incredible-Hulk.jpg" alt="Hobbies" style="width: 150px; height: 150px; object-fit: cover; border-radius: 0; max-width: 100%; margin-left: 0; transition: transform 0.6s ease-in-out;" onmouseover="this.style.transform='rotateY(180deg)'" onmouseout="this.style.transform='rotateY(0deg)'">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modules Panel -->
+            <div class="col-12">
+                <div class="panel h-100 d-flex flex-column">
+                    <div class="panel-heading">
+                        <h2>Modules</h2>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5><strong>SEMESTER 1:</strong></h5>
+                                <ul>
+                                    <li>INF 271</li>
+                                    <li>INF 272</li>
+                                    <li>INF 171</li>
+                                    <li>BEM 200</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h5><strong>SEMESTER 2:</strong></h5>
+                                <ul>
+                                    <li>BAC 200</li>
+                                    <li>EKN 220</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
+
+<!--
+    source for the bootstrap css and js
+
+    https://getbootstrap.com/docs/5.0/getting-started/introduction/
+-->

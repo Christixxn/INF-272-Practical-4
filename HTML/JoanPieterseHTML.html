@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="../Content/Styles.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- NavBar Section -->
+    <div class="name">Joan Pieterse</div>
+    <div class="navbar">
+        <a href="/">Main</a>
+        <a href="../MyStudyGroup/MyStudyGroupView">List Of People</a>
+        <a href="JohnDoeHTML.html">John Doe</a>
+        <a href="JaneDoeHTML.html">Jane Doe</a>
+        <a href="JoanPieterseHTML.html" class="active">Joan Pieterse</a>
+        <a href="LemmetjieGroenewaltHTML.html">Lemmetjie Groenewalt</a>
+        <a href="LewaldoRossHTML.html">Lewaldo Ross</a>
+        <a <button onclick="goBack()">Back</button></a>
+    </div>
+    <div class="bio-container">
+        <!-- Biography Section -->
+        <div class="bio-section">
+            <h2>Biography</h2>
+            <div class="bio-content">
+                <img src="../images/hawkeye.jpg" alt="Person" class="bio-img">
+                <div class="bio-text">
+                    <p><strong>Location:</strong> Pretoria, South Africa</p>
+                    <p><strong>Degree:</strong> LLB Law</p>
+                    <p><strong>Reason for Studying Here:</strong> I’ve always believed in justice and fairness, which led me to study LLB Law at UP. I want to make a difference in people’s lives by advocating for their rights and helping them navigate legal issues. My dream is to become a lawyer, not only to represent clients in court but also to contribute to a fairer society where everyone’s rights are respected and protected</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hobbies Section -->
+        <div class="hobbies-section">
+            <h2>Hobbies</h2>
+            <div class="hobbies-content">
+                <div class="hobbies-text">
+                    <p><strong>Hobbies:</strong>  Writing poetry, yoga, watching legal dramas</p>
+                    <p><strong>Favorite Activity:</strong> Attending poetry readings and expressing herself through her own creative writing.</p>
+                </div>
+                <img src="../images/peter-parker-Cropped.jpg" alt="Hobbies" class="hobbies-img">
+            </div>
+        </div>
+
+        <!-- Modules Section -->
+        <div class="modules-section">
+            <h2>Modules</h2>
+            <div class="modules-content">
+                <div class="module-column">
+                    <ul>
+                        <strong> SEMESTER 1:</strong>
+                        <li>OBS 114</li>
+                        <li>OBS 124</li>
+                        <li>FRK 121</li>
+                        <li>FRK 111</li>
+                    </ul>
+                </div>
+                <div class="module-column">
+                    <ul>
+                        <strong> SEMESTER 2:</strong>
+                        <li>STK 120</li>
+                        <li>INL 220</li>
+                        <li>INL 120</li>
+                        <li>INL 110</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Go back to the previous page
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+
+</body>
+</html>

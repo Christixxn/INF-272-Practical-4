@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="../Content/Styles.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- NavBar Section -->
+    <div class="name">Lewaldo Ross</div>
+    <div class="navbar">
+        <a href="/">Main</a>
+        <a href="../MyStudyGroup/MyStudyGroupView">List Of People</a>
+        <a href="JohnDoeHTML.html" >John Doe</a>
+        <a href="JaneDoeHTML.html" >Jane Doe</a>
+        <a href="JoanPieterseHTML.html" >Joan Pieterse</a>
+        <a href="LemmetjieGroenewaltHTML.html" >Lemmetjie Groenewalt</a>
+        <a href="LewaldoRossHTML.html" class="active">Lewaldo Ross</a>
+        <a <button onclick="goBack()">Back</button></a>
+    </div>
+
+    <div class="bio-container">
+        <!-- Biography Section -->
+        <div class="bio-section">
+            <h2>Biography</h2>
+            <div class="bio-content">
+                <img src="../images/Anthony-Mackie-Captain-America-4.jpg" alt="Person" class="bio-img">
+                <div class="bio-text">
+                    <p><strong>Location:</strong> Cape Town, South Africa</p>
+                    <p><strong>Degree:</strong> BCom Accounting</p>
+                    <p><strong>Reason for Studying Here:</strong> I’ve always been passionate about finance and business. That’s why I decided to study BCom Accounting at the University of Pretoria. My goal is to become a chartered accountant, helping businesses manage their finances, and ultimately, contributing to their growth and stability. I want to make a real impact in the business world by ensuring that companies are financially healthy.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hobbies Section -->
+        <div class="hobbies-section">
+            <h2>Hobbies</h2>
+            <div class="hobbies-content">
+                <div class="hobbies-text">
+                    <p><strong>Hobbies:</strong> Baking, hiking, photography</p>
+                    <p><strong>Favorite Activity:</strong> Exploring new hiking trails with friends and capturing beautiful landscapes through photography.</p>
+                </div>
+                <img src="../images/antman-and-the-wasp-marvel-4.jpg" alt="Hobbies" class="hobbies-img">
+            </div>
+        </div>
+
+        <!-- Modules Section -->
+        <div class="modules-section">
+            <h2>Modules</h2>
+            <div class="modules-content">
+                <div class="module-column">
+                    <ul>
+                        <strong> SEMESTER 1:</strong>
+                        <li>BEM 100</li>
+                        <li>COS 224</li>
+                        <li>COS 124</li>
+                        <li>STK 110</li>
+                    </ul>
+                </div>
+                <div class="module-column">
+                    <ul>
+                        <strong> SEMESTER 2:</strong>
+                        <li>STK 220</li>
+                        <li>WST 212</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Go back to the previous page
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+
+</body>
+</html>
