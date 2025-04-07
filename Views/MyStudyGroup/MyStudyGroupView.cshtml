@@ -1,0 +1,78 @@
+﻿@model IEnumerable<myStudyGroup.Models.MyStudyGroupModel>
+@{
+    ViewBag.Title = "My Study Group";
+}
+
+<h2>My Study Group</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.StudentNumber)</th>
+            <th>@Html.DisplayNameFor(model => model.Name)</th>
+            <th>@Html.DisplayNameFor(model => model.Surname)</th>
+            <th>@Html.DisplayNameFor(model => model.EmailAddress)</th>
+            <th>@Html.DisplayNameFor(model => model.MyLink)</th>
+            <th>Remove Person</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr id="row-@item.StudentNumber">
+                <td>
+                    @Html.DisplayFor(modelItem => item.StudentNumber)
+                </td>
+                <td data-name="@item.Name">
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Surname)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EmailAddress)
+                </td>
+                <td>
+                    <a href="@Url.Content(item.MyLink)" target="_blank">
+                        <button class="btn btn-primary">View Profile</button>
+                    </a>
+                </td>
+                <td>
+                    <button class="btn btn-danger" onclick="deleteRow(this)">Delete</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<script>
+    // when the page loads
+    window.onload = function () {
+        var rows = document.querySelectorAll("tbody tr"); // Get all rows inside the body
+
+        rows.forEach(function (row) {
+            // Retrieve the Name
+            var nameCell = row.querySelector("td[data-name]"); 
+            if (nameCell) {
+                var name = nameCell.getAttribute('data-name');
+
+                // Check if the first letter of the name is 'S'
+                if (name && name.charAt(0).toUpperCase() === 'S') {
+                    // Highlight the columns by adding a CSS class
+                    row.querySelectorAll("td").forEach(function (cell) {
+                        cell.style.color = 'red'; // Highlight the cells in red
+                    });
+                }
+            }
+        });
+    }
+
+    // Function to delete the row
+    function deleteRow(button) {
+        var row = button.closest('tr'); // select the row that contains the delete button
+        if (row) {
+            // Remove the row 
+            row.remove();
+        }
+    }
+</script>
